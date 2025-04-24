@@ -101,7 +101,7 @@ async def get_account_info(uid, session):
             return None
 
 async def get_tokens(session):
-    url = 'http://127.0.0.1:5001/token'
+    url = 'https://sktokenss.vercel.app/token'
     async with session.get(url) as response:
         if response.status == 200:
             tokens = await response.json()  # تحويل النتيجة إلى JSON
@@ -189,4 +189,4 @@ def like_endpoint():
         return jsonify({'error': str(e)}), 500
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5008)
+    app.run(debug=false)
