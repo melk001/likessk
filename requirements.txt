@@ -1,0 +1,6 @@
+flask
+asyncio
+aiohttp
+pycryptodome
+protobuf
+requests
